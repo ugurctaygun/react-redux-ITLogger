@@ -10,6 +10,8 @@ import AddLogModal from './components/Logs/AddLogModal';
 import EditLogModal from './components/Logs/EditLogModal';
 import AddTechModal from './components/techs/AddTechModal';
 import TechListModal from './components/techs/TechListModal';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   useEffect(() => {
@@ -18,6 +20,7 @@ function App() {
   });
 
   return (
+    <Provider store={store}>
     <div className="App">
       <SearchBar />
       <div className="container">
@@ -29,6 +32,7 @@ function App() {
         <AddLogModal />
       </div>
     </div>
+    </Provider>
   );
 }
 

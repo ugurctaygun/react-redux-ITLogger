@@ -8,6 +8,8 @@ npm i -D json-server concurrently
 
 npm i materialize-css
 
+npm i redux react-redux redux-thunk redux-devtools-extension
+
 RUN SERVER AND CLIENT CONCURRENTLY WITH NPM
 
 Add  "json-server": "json-server --watch db.json --port 5000",
